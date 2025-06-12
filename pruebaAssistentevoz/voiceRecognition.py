@@ -28,3 +28,8 @@ elif 'youtube' in talk():
     engine.runAndWait()
     text = talk()
     webbrowser.open(f"https://www.youtube.com/results?search_query={text}")
+elif 'google' in talk():
+    engine.say("Que quieres buscar en Google?")
+    engine.runAndWait()
+    text = talk()
+    webbrowser.open(f"https://www.google.com/search?q={text}")
